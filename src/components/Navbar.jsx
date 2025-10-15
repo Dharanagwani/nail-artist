@@ -56,7 +56,7 @@ export default function Navbar(){
 
         {/* Navigation Links */}
         <nav className={`nav-links ${open ? "show" : ""}`}>
-          <NavLink to="/" end onClick={() => setOpen(false)}>Home</NavLink>
+          <NavLink to="/nail-artist/" end onClick={() => setOpen(false)}>Home</NavLink>
           <NavLink to="/gallery" onClick={() => setOpen(false)}>Gallery</NavLink>
           <NavLink to="/services" onClick={() => setOpen(false)}>Services</NavLink>
           <NavLink to="/about" onClick={() => setOpen(false)}>About</NavLink>
