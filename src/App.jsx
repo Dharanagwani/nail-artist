@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import { Routes, Route } from 'react-router-dom'
+import {HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -12,6 +12,7 @@ import ContactPage from './pages/ContactPage'
 function App() {
   return (
     <div className="app-root">
+      <Router>
       <Navbar />
       <main>
         <Routes>
@@ -23,6 +24,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      </Router>
     </div>
   )
 }
